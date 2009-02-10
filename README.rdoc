@@ -18,7 +18,7 @@ When 95% of my form fields look like this, this HTML can get repetitive. This pl
 
 `labeled_text_field` is a wrapper around FormHelper's `text_field` method. All options except :label are simply passed through. The wrapper is provided via `method_missing`, and therefore works with any object field helper (such as `date_select` or `check_box`).
 
-== Adding additional details
+=== Adding additional details
 
 Occasionally, I need to include some extra information, such as in-line help:
 
@@ -36,7 +36,7 @@ For these cases, each labeled_* method can take a block argument:
 	the underscore (_) character or dashes (-).</p>
   <% end %>
 
-== Really special cases
+=== Really special cases
 
 But what about the small but thorny circumstances where the above structure is far too limiting? For cases where you want the basic .field > label structure, but need more control over how your form fields themselves are generated and laid out, there's a separate method for generating just the wrapper and label:
 
@@ -52,7 +52,7 @@ Which gives you:
   </div>
 
 
-== What about form_for?
+=== What about form_for?
 
 No problemo; all labeled_* methods work in form_for-generated forms as well:
 
